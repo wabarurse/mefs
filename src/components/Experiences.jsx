@@ -17,7 +17,7 @@ function Experiences() {
           direction={0}
           logo="/images/experiences/orbital.png"
           title="Software Developer"
-          company="@ UW Orbital"
+          company="@ UW Orbital" 
           description={[
             "Optimized API endpoints to create and delete system commands, ensuring efficient database transactions and proper error handling.",
             "Designed an asynchronous logging middleware to capture and log request-response cycles, improving system observability and debugging efficiency."
