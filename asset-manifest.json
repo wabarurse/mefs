@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.a21f197b.css",
-    "main.js": "/me/static/js/main.b1b6a206.js",
-    "static/media/Nunito-VariableFont_wght.ttf": "/me/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
-    "static/media/Holysweet-rgn4K.otf": "/me/static/media/Holysweet-rgn4K.5aaaec86dd98b31a78ed.otf",
-    "index.html": "/me/index.html",
-    "main.a21f197b.css.map": "/me/static/css/main.a21f197b.css.map",
-    "main.b1b6a206.js.map": "/me/static/js/main.b1b6a206.js.map"
+    "main.css": "/mefs/static/css/main.3928a361.css",
+    "main.js": "/mefs/static/js/main.53a67029.js",
+    "static/media/Nunito-VariableFont_wght.ttf": "/mefs/static/media/Nunito-VariableFont_wght.c0f0807a40aebdc41b40.ttf",
+    "static/media/Holysweet-rgn4K.otf": "/mefs/static/media/Holysweet-rgn4K.5aaaec86dd98b31a78ed.otf",
+    "index.html": "/mefs/index.html",
+    "main.3928a361.css.map": "/mefs/static/css/main.3928a361.css.map",
+    "main.53a67029.js.map": "/mefs/static/js/main.53a67029.js.map"
   },
   "entrypoints": [
-    "static/css/main.a21f197b.css",
-    "static/js/main.b1b6a206.js"
+    "static/css/main.3928a361.css",
+    "static/js/main.53a67029.js"
   ]
 }
