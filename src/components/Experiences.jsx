@@ -19,8 +19,8 @@ function Experiences() {
           title="Software Developer"
           company="@ UW Orbital"
           description={[
-            "Designed and implemented I2C communication protocols to interface with embedded satellite devices.",
-            "Developed a FreeRTOS-based real-time temperature monitoring system to maintain satellite functionality and operational stability."
+            "Optimized API endpoints to create and delete system commands, ensuring efficient database transactions and proper error handling.",
+            "Designed an asynchronous logging middleware to capture and log request-response cycles, improving system observability and debugging efficiency."
           ].join('\n')}
           date="October 2024 - Present"
           link="https://www.uworbital.com/"

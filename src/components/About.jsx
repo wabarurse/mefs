@@ -62,11 +62,13 @@ function About() {
         <div className="flex flex-col items-center space-y-4 ">
           <div className="grid grid-cols-6 gap-y-16 container py-12 place-items-center">
 
-            <Skill name="c++" image="/images/skills/c++.png" />
-            <Skill name="c" image="/images/skills/c.png" />
+            
             <Skill name="python" image="/images/skills/python.png" />
             <Skill name="javascript" image="/images/skills/js.png" />
             <Skill name="typescript" image="/images/skills/ts.png" />
+            <Skill name="c++" image="/images/skills/c++.png" />
+            <Skill name="c" image="/images/skills/c.png" />
+            <Skill name="fastapi" image="/images/skills/fastapi.png" />
             <Skill name="html" image="/images/skills/html.png" />
             <Skill name="css" image="/images/skills/css.png" />
             <Skill name="tailwind" image="/images/skills/tailwind.png" />
