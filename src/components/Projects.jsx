@@ -28,7 +28,7 @@ function Projects() {
           />
           <ProjectCard
           logo="/images/projects/tourni.png"
-          name="Touni" 
+          name="Tourni" 
           description=
           "Tourni is a tournament portal for community and intramural activities, seamlessly connecting participants 
           and organizers. With a user-friendly interface, organizers can set up tournaments in under a minute. 
