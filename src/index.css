@@ -35,24 +35,6 @@
         @apply absolute w-[150px] h-[40px] rounded-lg hover:bg-[#1A1A1A] hover:scale-105 transition-all;
     }
 
-    .scroll-fade {
-        animation: projectReveal;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
-
-    @keyframes projectReveal {
-        from {
-            opacity: 0;
-            scale: 0.5;
-        }
-
-        to {
-            opacity: 1;
-            scale: 1;
-        }
-    }
-
     .hover-zoom {
         @apply hover:scale-105 transition-all
     }
@@ -67,10 +49,6 @@
 
     .experience-logo {
         @apply absolute flex justify-center items-center top-12 left-1/2 -translate-x-1/2 h-[80px] w-[80px] rounded-full bg-[#CECECE];
-    }
-
-    .experience-card {
-        @apply absolute top-14 w-[400px] h-auto bg-[#1A1A1A] p-8 rounded-lg;
     }
 
     .experience-date {
@@ -104,18 +82,14 @@
             transform: rotate(360deg);
         }
     }
-      
-    
-
-
 
 
 
     .profile-picture {
         @apply relative w-[250px] h-[250px] bg-[#1A1A1A] rounded-full;
+        scale: 1;
     }
     
-    .profile-picture:after,
     .profile-picture::after {
         content: '';
         position: absolute;
@@ -132,28 +106,10 @@
         animation: spin-this 10s linear infinite;
     }
 
-    .profile-picture:before,
     .profile-picture::before {
         content: '';
         filter: blur(1.5rem);
         opacity: 0.5;
-    }
-
-    @keyframes spin-this {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    
-
-
-
-
-    /* https://www.youtube.com/watch?v=ezP4kbOvs_E */
-
-    .project-card {
-        @apply relative w-[400px] h-[450px] bg-[#1A1A1A] p-8 rounded-lg;
     }
 
     @property --angle {
@@ -162,27 +118,16 @@
         inherits: false;
     }
 
-    .project-card::after,
-    .project-card::before {
-        content: '';
-        position: absolute;
-        inset: calc(-1 * var(--padding, 5px));
-        background-image: conic-gradient(from var(--angle), transparent 70%, orange);
-        border-radius: 14px;
-        z-index: -1;
-        animation: 10s spin linear infinite;
+
+    .experience-card {
+        @apply absolute top-14 w-[400px] h-auto bg-[#1A1A1A] p-8 rounded-lg;
+        --angle: 0deg;
     }
 
-    .project-card::before {
-        filter: blur(1.5rem);
-        opacity: 0.5;
-    }
-
-    .experience-card::after,
-    .experience-card::before {
+    .experience-card::after {
         content: '';
         position: absolute;
-        inset: calc(-1 * var(--padding, 5px));
+        inset: -5px;
         background:
             conic-gradient(from var(--angle),
                 transparent 70%,
@@ -201,6 +146,44 @@
         filter: blur(1.5rem);
         opacity: 0.5;
     }
+    @keyframes spin {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    @keyframes spin-this {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /* https://www.youtube.com/watch?v=ezP4kbOvs_E */
+
+    .project-card {
+        @apply relative w-[400px] h-[450px] bg-[#1A1A1A] p-8 rounded-lg;
+        /* scale: 1; */
+    }
+
+    
+
+    .project-card::after {
+        content: '';
+        position: absolute;
+        inset: calc(-1 * var(--padding, 5px));
+        background-image: conic-gradient(from var(--angle), transparent 70%, orange);
+        border-radius: 14px;
+        z-index: -1;
+        animation: 10s spin linear infinite;
+    }
+
+    .project-card::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+
+    
 
     @keyframes spin {
         to {

@@ -71,7 +71,7 @@ const Experience = ({
         <img src={process.env.PUBLIC_URL + logo} alt="company logo" className="h-[60px] w-[60px]" />
       </a>
     </div>
-    <div className="w-full">
+    <div className="scroll-fade w-full">
       <div className="hover-zoom relative">
         <div
           className={`experience-card ${direction === 0 ? "left-4" : "right-4"

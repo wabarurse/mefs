@@ -13,7 +13,7 @@ function About() {
         </h1>
         <BiDownArrow size={48} className="absolute bottom-8 animate-bounce text-color-1" />
       </div>
-      <div className="scroll-fade bg-color flex justify-center mx-auto px-4 py-24">
+      <div className="bg-color flex justify-center mx-auto px-4 py-24">
         <div className="profile-picture">
           <img src={process.env.PUBLIC_URL + "/images/me.jpeg"} alt="profile" className="w-full h-full rounded-full" />
         </div>
@@ -98,13 +98,6 @@ function About() {
         <Song songCode="2aL4lMGhWdPpyPL6COPou7" />
 
       </div> 
-
-
-      <div className="flex justify-center items-center">
-          <div className="test-bg"></div>
-          <div className="test"></div>
-        
-      </div>
 
       <div className="flex justify-center mx-auto px-4 py-8"> </div>
       <Footer />
