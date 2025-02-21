@@ -80,6 +80,37 @@
 
 
 
+
+
+
+    
+    .test {
+        @apply relative w-[250px] h-[250px] bg-white rounded-full;
+    }
+    .test-bg {
+        @apply absolute w-[260px] h-[260px] rounded-full;
+        background-image: conic-gradient(
+            #ff4545,
+            #00ff99,
+            #006aff,
+            #ff0095,
+            #ff4545
+        );
+        animation: spin-test 10s linear infinite;
+    }
+      
+    @keyframes spin-test {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+      
+    
+
+
+
+
+
     .profile-picture {
         @apply relative w-[250px] h-[250px] bg-[#1A1A1A] rounded-full;
     }

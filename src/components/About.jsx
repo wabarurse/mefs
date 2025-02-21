@@ -99,6 +99,13 @@ function About() {
 
       </div>
 
+
+      <div className="flex justify-center items-center">
+          <div className="test-bg"></div>
+          <div className="test"></div>
+        
+      </div>
+
       <div className="flex justify-center mx-auto px-4 py-8"> </div>
       <Footer />
     </div>
