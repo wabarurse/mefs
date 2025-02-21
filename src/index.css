@@ -56,35 +56,6 @@
     }
 
 
-
-
-
-
-
-    
-    .test {
-        @apply relative w-[250px] h-[250px] bg-white rounded-full;
-    }
-    .test-bg {
-        @apply absolute w-[260px] h-[260px] rounded-full;
-        background-image: conic-gradient(
-            #ff4545,
-            #00ff99,
-            #006aff,
-            #ff0095,
-            #ff4545
-        );
-        animation: spin-test 10s linear infinite;
-    }
-      
-    @keyframes spin-test {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-
-
     .profile-picture {
         @apply relative w-[250px] h-[250px] bg-[#1A1A1A] rounded-full;
         scale: 1;
@@ -162,7 +133,7 @@
     /* https://www.youtube.com/watch?v=ezP4kbOvs_E */
 
     .project-card {
-        @apply relative w-[400px] h-[450px] bg-[#1A1A1A] p-8 rounded-lg;
+        @apply relative w-[400px] h-[500px] bg-[#1A1A1A] rounded-lg p-4;
         /* scale: 1; */
     }
 
@@ -244,10 +215,47 @@
         }
     }
 
-}
 
-/* body {
-    background-color: #272727;
-    margin: 0;
-    min-height: 100vh;
-} */
+    /* https://www.youtube.com/watch?v=YKPkDFs5DGY&list=PLVGpQnv1Jm4yxKcPhC0p2pv0k-eulDxhy */
+    .popup {
+        @apply fixed top-0 left-0 w-full h-full flex items-center justify-center;
+      }
+      
+      .popup .overlay {
+        @apply absolute top-0 left-0 w-full h-full;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: opacity 100ms ease-in-out 200ms;
+      }
+      
+      .popup .popup-content {
+        @apply relative w-5/6 max-w-[350px] p-6 rounded-xl shadow-xl;
+        background: #1A1A1A;
+        transform: translateY(-20px) scale(0.95);
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+      }
+      
+      .popup .close-button {
+        @apply flex justify-center mt-4;
+      }
+      
+      .popup.active {
+        opacity: 1;
+        transition: top 0ms ease-in-out 0ms;
+      }
+      
+      .popup.active .overlay {
+        opacity: 1;
+        transition: all 300ms ease-in-out;
+      }
+      
+      .popup.active .popup-content {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      
+
+
+}

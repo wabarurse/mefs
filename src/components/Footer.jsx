@@ -33,7 +33,7 @@ function Footer() {
 
 const Socials = ({ icon, href }) => (
     <a 
-    href={href}
+    href={href} target="_blank" rel="noreferrer"
     className="socials"
     >
         {icon}

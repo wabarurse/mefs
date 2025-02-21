@@ -2,6 +2,7 @@ import React from 'react'
 import NavigationBar from './NavigationBar'
 import Footer from './Footer'
 import { BiDownArrow } from "react-icons/bi";
+import { IoLocationSharp } from "react-icons/io5";
 
 function About() {
   return (
@@ -19,9 +20,13 @@ function About() {
         </div>
         <div className="flex flex-col space-y-4 max-w-screen-lg">
           <h1 className="text-6xl font-nunito font-bold text-color-1 px-16">Hi 👋, I'm Richard</h1>
+          <div className="flex flex-row items-center space-x-2 px-16">
+            <IoLocationSharp size={48} color="white"/>
+            <p className="text-4xl font-nunito font-bold text-color-1">Toronto/Waterloo, Canada</p>
+          </div>
           <p className="text-2xl font-nunito text-color-2 px-16">
-            I'm a software engineering student passionate about creating cool software solutions to 
-            solve real world problems. I am also interested in healthcare software and artificial 
+            I'm a software engineering student looking to contribute and learn in a professional environment 
+            and apply my technical skills toward a goal. I am particularly interested in healthcare software and artificial 
             intelligence. In my free time, I enjoy playing badminton, video games, chill coding 
             and digging for new music.
           </p>
@@ -36,7 +41,7 @@ function About() {
         <p className="text-color-2 font-nunito py-2">
           Software Engineering is an interdisciplinary program supported by both the Faculty
           of Mathematics and the Faculty of Engineering applying both computer science and 
-          engineering principals and practices to the creation, operation, and maintenance 
+          engineering principles and practices to the creation, operation, and maintenance 
           of software systems. The tight knit cohort systems in the software engineering 
           program creates a great sense of community fostering strong and meaningful 
           relationships with your classmates.
@@ -120,7 +125,7 @@ const Skill = ({ name, image }) => (
 
 const EducationImage = ({ image, link }) => (
   <div className="hover-zoom h-16">
-    <a href={link}>
+    <a href={link} target="_blank" rel="noreferrer">
       <img
         src={process.env.PUBLIC_URL + image}
         alt="Item 1"

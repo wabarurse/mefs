@@ -3,8 +3,11 @@ import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
 import { BsLink45Deg } from "react-icons/bs";
 import { BiDownArrow } from "react-icons/bi";
+import { useState, useEffect } from "react";
 
 function Projects() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="bg-color">
       <NavigationBar />
@@ -15,73 +18,159 @@ function Projects() {
       <div className="max-w-4xl mx-auto px-4 py-32">
         <div className="grid grid-cols-2 gap-10 justify-items-center">
 
-          <ProjectCard
-            logo="/images/education/uw_se.png"
-            name="Voice Controlled Car"
-            description=
-            "I designed and built a voice-controlled robotic car using a 3D-printed chassis, Arduino motors, 
-            an L298 motor driver, and a Raspberry Pi Zero W. To enable voice control, I integrated VOSK, a 
-            speech recognition model, to process voice input into a string, which was then transmitted to 
-            the Raspberry Pi via a Netcat pipeline. A Bash script then captured the incoming command, while a 
-            Python script interfaced with the L298 motor driver to enable real-time control of the car's movement."
-            link="https://github.com/raphael-64/voice-controlled-wheelchair"
-          />
-          <ProjectCard
-          logo="/images/projects/tourni.png"
-          name="Tourni" 
-          description=
-          "Tourni is a tournament portal for community and intramural activities, seamlessly connecting participants 
-          and organizers. With a user-friendly interface, organizers can set up tournaments in under a minute. 
-          Tourni integrates WebRTC for live streaming, enabling easy match broadcasting. It also tracks stats and 
-          match histories, featuring a unique card-collection system where athletes earn digital badges for defeated 
-          opponents—fostering competition, celebrating achievements, and giving players goals to chase."
-          link="https://github.com/allenlian1/tourni"
-          />
-          <ProjectCard 
-            logo="/images/projects/swype.png"
-            name="Swype" 
-            description=
-            "I developed Swype, an educational app that enhances math practice for younger students by gamifying 
-            learning and fostering friendly competition within a classroom setting. Instead of viewing short-form 
-            videos as a distraction, I leveraged them as a tool for education, addressing the challenge of shortening
-            attention spans by making learning more engaging and interactive."
-            link="https://github.com/Jam-Cai/Swype"
-          />
+          <div onClick={() => setIsOpen(true)}>
+            <ProjectCard
+              
+              logo="/images/education/uw_se.png"
+              name="Voice Controlled Car"
+              description="I designed and built a voice-controlled robotic car."
+              skills={[
+                { name: "python", image: "/images/skills/python.png" },
+                { name: "git", image: "/images/skills/git.png" },
+                { name: "github", image: "/images/skills/github.png" },
+              ]}
+              link="https://github.com/raphael-64/voice-controlled-wheelchair"
+            />
+          </div>
           
+          <div onClick={() => setIsOpen(true)}>
+            <ProjectCard
+              
+              logo="/images/projects/tourni.png"
+              name="Tourni" 
+              description="Tourni is a tournament portal for community and intramural activities, seamlessly connecting participants and organizers."
+              skills={[
+                { name: "typescript", image: "/images/skills/ts.png" },
+                { name: "react", image: "/images/skills/react.png" },
+                { name: "tailwind", image: "/images/skills/tailwind.png" },
+                { name: "postgres", image: "/images/skills/postgres.png" },
+                { name: "git", image: "/images/skills/git.png" },
+                { name: "github", image: "/images/skills/github.png" },
+              ]}
+              link="https://github.com/allenlian1/tourni"
+            />
+          </div>
 
-
+          <div onClick={() => setIsOpen(true)}>
+            <ProjectCard
+              
+              logo="/images/projects/swype.png"
+              name="Swype"
+              description="I developed Swype, an educational app that enhances math practice for younger students by gamifying learning and fostering friendly competition within a classroom setting."
+              skills={[
+                { name: "swift", image: "/images/skills/swift.png" },
+                { name: "swiftui", image: "/images/skills/swiftui.png" },
+                { name: "git", image: "/images/skills/git.png" },
+                { name: "github", image: "/images/skills/github.png" },
+              ]}
+              link="https://github.com/Jam-Cai/Swype"
+            />
+          </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 flex justify-center items-center py-16">
-          {/* <button className="button scroll-zoom">
+
+
+        {/* <div className="max-w-4xl mx-auto px-4 flex justify-center items-center py-16">
+          <button className="button scroll-zoom">
             <p className="font-nunito text-color-1 text-xl font-bold">More Projects</p>
-          </button> */}
-        </div>
+          </button>
+        </div> */}
+
+        {isOpen && <Popup onClose={() => setIsOpen(false)} />}
       </div>
       <Footer />
     </div>
   );
 }
 
-const ProjectCard = ({ logo, name, description, link }) => (
-  <div className="scroll-fade hover-zoom">
-    <div className="project-card">
-      <div class="absolute top-4 left-4 w-8 h-8">
-        <img src={process.env.PUBLIC_URL + logo} alt="logo" />
+const ProjectCard = ({ logo, name, description, link, skills }) => (
+  <div className="scale-100 hover-zoom">
+    <div className="project-card flex flex-col items-center">
+    <div className="flex items-center justify-center bg-[#272727] w-full h-32 rounded-lg py-4">
+      <img
+        className="max-h-full max-w-full object-contain"
+        src={process.env.PUBLIC_URL + logo}
+        alt="logo"
+      />
+    </div>
+    <h1 className="p-4 font-nunito text-color-1 text-2xl font-bold">{name}</h1>
+    <p className="px-4 font-nunito text-color-2">{description}</p>
+    <div className="flex flex-row items-center">
+      <div className="grid grid-cols-4 py-8 gap-x-8 gap-y-12">
+        {skills.map((skill) => (
+          <Skill name={skill.name} image={skill.image} />
+        ))}
       </div>
-      <div className="absolute flex top-4 left-16 h-8 w-auto items-center">
-        <h1 className="font-nunito text-color-1 text-2xl font-bold">{name}</h1>
-      </div>
-      <div className="font-nunito text-color-2 absolute top-14 w-auto p-4">
-        <p>{description}</p>
-      </div>
-      <div class="hover-zoom-large absolute bottom-4 right-4 w-8 h-8">
-        {" "}
-        <a href={link}>
+    </div>
+    <div class="hover-zoom-large absolute bottom-4 right-4 w-8 h-8">
+        <a href={link} target="_blank" rel="noreferrer">
           <BsLink45Deg size={32} color="#CECECE" />
         </a>
-      </div>
+    </div>
     </div>
   </div>
 );
 
+
+function Popup({ onClose }) {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    setActive(true);
+  }, []);
+
+  const closePopup = () => {
+    setActive(false);
+    setTimeout(onClose, 300);
+  };
+
+  return (
+    <div className={`popup ${active ? "active" : ""}`}>
+      <div className="overlay" onClick={closePopup}></div>
+      <div className="popup-content">
+        <h2 className="text-lg font-semibold text-color-1">Pop up coming soon!</h2>
+        <p className="text-color-2 mt-2">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+          inventore et ullam, porro eius velit.
+        </p>
+        <div className="close-button">
+          <button
+            className="px-3 py-1 bg-red-500 text-white rounded-md"
+            onClick={closePopup}
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const Skill = ({ name, image }) => (
+  <div className="flex flex-col h-12 w-12 items-center justify-center space-y-1">
+    <img
+      src={process.env.PUBLIC_URL + image}
+      alt="Item 1"
+      className="w-full h-full object-contain"
+    />
+    <h3 className="text-md items-center font-nunito font-bold text-color-2">{name}</h3>
+  </div>
+)
+
+
+// function createPopup(id) {
+//   let popupNode = document.querySelector(id);
+//   let overlay = popupNode.querySelector(".overlay");
+//   let closeBtn = popupNode.querySelector(".close-button");
+//   function openPopup() {
+//     popupNode.classList.add("active");
+//   }
+//   function closePopup() {
+//     popupNode.classList.remove("active");
+//   }
+//   overlay.addEventListener("click", closePopup);
+//   closeBtn.addEventListener("click", closePopup);
+//   return openPopup;
+// }
+
 export default Projects;
+

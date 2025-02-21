@@ -34,7 +34,7 @@ function Experiences() {
             "Collaborated on a movement library written in C++ under the Purdue Robotics Operating System (PROS), implementing PID feedback loops to ensure precise direction and speed for consistent autonomous routes.",
             "Qualified for the VEX World Championships for 4 consecutive years"
           ].join('\n')}
-          date="January 2020 - May 2024"
+          date="June 2019 - May 2024"
           link="https://www.youtube.com/@16868"
         />
         <Experience
@@ -46,7 +46,7 @@ function Experiences() {
             "Operated the Laser Capture Micro-dissection (LCM) to remove tumor cells from heterogeneous H&E stained biopsy samples, obtaining over 100 tumor samples for both research and diagnosis.",
             "Observed the application of various biomedical systems in extracting complex medical data for clinical diagnosis and cancer treatment."
           ].join('\n')}
-          date="August 2022 - August 2023"
+          date="August 2022, 2023"
           link="https://www.uhn.ca/OurHospitals/PrincessMargaret"
         />
       </div>
@@ -67,12 +67,12 @@ const Experience = ({
   <div className="scroll-fade relative flex gap-4 h-[400px]">
     <div className="experience-vertical-line"></div>
     <div className="hover-zoom experience-logo">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <img src={process.env.PUBLIC_URL + logo} alt="company logo" className="h-[60px] w-[60px]" />
       </a>
     </div>
-    <div className="scroll-fade w-full">
-      <div className="hover-zoom relative">
+    <div className="w-full">
+      <div className="scale-100">
         <div
           className={`experience-card ${direction === 0 ? "left-4" : "right-4"
             }`}
