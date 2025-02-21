@@ -31,7 +31,7 @@ function About() {
       <div className="scroll-fade flex flex-col space-y-2 mx-auto py-16 max-w-screen-xl">
 
         <h1 className="text-6xl font-nunito font-bold text-color-1">🎓 Education</h1>
-        <h2 className="text-4xl font-nunito font-bold text-color-1">University of Waterloo - Software Engineering (2024 - 2029)</h2>
+        <h2 className="text-4xl font-nunito font-bold text-color-1">University of Waterloo - Software Engineering</h2>
         <p className="text-color-2 font-nunito">Waterloo, ON, Canada</p>
         <p className="text-color-2 font-nunito py-2">
           Software Engineering is an interdisciplinary program supported by both the Faculty
