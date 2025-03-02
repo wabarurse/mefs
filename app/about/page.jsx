@@ -9,7 +9,7 @@ function About() {
     <div className="bg-color">
       <div className="page-fade-in flex justify-center items-center h-screen">
         <h1 className="font-crazy text-9xl font-bold text-color-1">
-          About Me
+          About Me in Next
         </h1>
         <BiDownArrow size={48} className="absolute bottom-8 animate-bounce text-color-1" />
       </div>
