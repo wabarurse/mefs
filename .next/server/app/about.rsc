@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+2:I[8824,["873","static/chunks/3d47b92a-1816534da3900173.js","87","static/chunks/0e762574-618a406a615538ea.js","632","static/chunks/632-eee058ba8633c07b.js","177","static/chunks/app/layout-08ead221eac9df8c.js"],"default"]
+3:I[5244,[],""]
+4:I[3866,[],""]
+5:I[3146,["873","static/chunks/3d47b92a-1816534da3900173.js","87","static/chunks/0e762574-618a406a615538ea.js","632","static/chunks/632-eee058ba8633c07b.js","177","static/chunks/app/layout-08ead221eac9df8c.js"],"default"]
+6:I[7033,[],"ClientPageRoot"]
+7:I[7844,["873","static/chunks/3d47b92a-1816534da3900173.js","512","static/chunks/9c4e2130-c2bfe666396ce175.js","220","static/chunks/app/about/page-cc7307eeddb2d932.js"],"default"]
+a:I[6213,[],"OutletBoundary"]
+d:I[6213,[],"ViewportBoundary"]
+f:I[6213,[],"MetadataBoundary"]
+11:I[4835,[],""]
+:HL["/_next/static/css/09ac8812a543022d.css","style"]
+0:{"P":null,"b":"vJK7Bxkxsu4K-ZgNHKAgP","p":"","c":["","about"],"i":false,"f":[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/09ac8812a543022d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","div",null,{"className":"bg-color flex flex-col min-h-screen","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-grow pt-20 px-20 pb-20","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"$undefined",[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L5",null,{}]]}]}]}]]}],{"children":["about",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],"$undefined",null,["$","$La",null,{"children":["$Lb","$Lc",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","jeZr-pSopDYlRPsPnCJx4",{"children":[["$","$Ld",null,{"children":"$Le"}],null]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+8:{}
+9:{}
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+c:null
+10:[]
