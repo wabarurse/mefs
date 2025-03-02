@@ -45,7 +45,7 @@ const NavigationBar = () => {
       <span className="navbar-right-text group-hover:scale-100">
         {rightPathMap[pathname]}
       </span>
-    </button>
+    </button> 
   );
 
   return (
