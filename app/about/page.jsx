@@ -15,7 +15,7 @@ function About() {
       </div>
       <div className="bg-color flex justify-center mx-auto px-4 py-24">
         <div className="profile-picture">
-          <img src="/images/me.jpeg" alt="profile" className="w-full h-full rounded-full" />
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/me.jpeg`} alt="profile" className="w-full h-full rounded-full" />
         </div>
         <div className="flex flex-col space-y-4 max-w-screen-lg">
           <h1 className="text-6xl font-nunito font-bold text-color-1 px-16">Hi 👋, I'm Richard</h1>
@@ -113,7 +113,7 @@ function About() {
 const Skill = ({ name, image }) => (
   <div className="flex flex-col h-16 w-16 items-center justify-center space-y-1">
     <img
-      src={image}
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH}` + image}
       alt="Item 1"
       className="w-full h-full object-contain"
     />
@@ -125,7 +125,7 @@ const EducationImage = ({ image, link }) => (
   <div className="hover-zoom h-16">
     <a href={link} target="_blank" rel="noreferrer">
       <img
-        src={image}
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}` + image}
         alt="Item 1"
         className="w-full h-full object-cover"
       />

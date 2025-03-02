@@ -146,7 +146,7 @@ function Popup({ onClose }) {
 const Skill = ({ name, image }) => (
   <div className="flex flex-col h-12 w-12 items-center justify-center space-y-1">
     <img
-      src={image}
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH}` + image}
       alt="Item 1"
       className="w-full h-full object-contain"
     />

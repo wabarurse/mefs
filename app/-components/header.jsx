@@ -55,7 +55,7 @@ const NavigationBar = () => {
     <div className="bg-color fixed top-0 h-20 w-full m-0 shadow-lg flex justify-center items-center gap-x-4 z-10">
       <Link href="/about">
       <Image
-        src="/images/logo.png"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo.png`}
         alt="Logo"
         height={48}
         width={48}
