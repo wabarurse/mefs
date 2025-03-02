@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const isProduction = process.env.NODE_ENV = "production";
+// const isProduction = process.env.NODE_ENV = "production";
 
 const nextConfig = {
-    basePath: isProduction ? "/mefs" : "",
+    // basePath: isProduction ? "/mefs" : "",
     output: "export",  
     distDir: "out",  
     images: {
@@ -12,3 +12,4 @@ const nextConfig = {
   };
   
   module.exports = nextConfig;
+
