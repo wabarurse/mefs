@@ -13,8 +13,20 @@ function Experiences() {
         <BiDownArrow size={48} className="absolute bottom-8 animate-bounce text-color-1" />
       </div>
       <div className="max-w-5xl mx-auto px-4 py-48">
-        <Experience
+      <Experience
           direction={0}
+          logo="/images/experiences/sap.png"
+          title="Automation Testing Analyst Assistant"
+          company="@ CACI"
+          description={[
+            "Assisted senior analysts in developing future testing strategies and practices in Micro Focus ALM.",
+            "Executed UFT automation and manual test scripts alongside SMEs to assess program quality, performance, capacity, and release readiness."
+          ].join('\n')}
+          date="July 2024 - August 2024"
+          link="https://www.sap.com/index.html"
+        />
+        <Experience
+          direction={1}
           logo="/images/experiences/orbital.png"
           title="Software Developer"
           company="@ UW Orbital"
@@ -26,7 +38,7 @@ function Experiences() {
           link="https://www.uworbital.com/"
         />
         <Experience
-          direction={1}
+          direction={0}
           logo="/images/experiences/checkmate.png"
           title="Hardware and Software Developer"
           company="@ Checkmate Robotics"
@@ -38,7 +50,7 @@ function Experiences() {
           link="https://www.youtube.com/@16868"
         />
         <Experience
-          direction={0}
+          direction={1}
           logo="/images/experiences/uhn.png"
           title="Summer Student"
           company="@ Princess Margaret Cancer Center"
