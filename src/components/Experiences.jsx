@@ -15,7 +15,7 @@ function Experiences() {
       <div className="max-w-5xl mx-auto px-4 py-48">
       <Experience
           direction={0}
-          logo="/images/experiences/sap.png"
+          logo="/images/experiences/caci.png"
           title="Automation Testing Analyst Assistant"
           company="@ CACI"
           description={[
@@ -23,7 +23,7 @@ function Experiences() {
             "Executed UFT automation and manual test scripts alongside SMEs to assess program quality, performance, capacity, and release readiness."
           ].join('\n')}
           date="July 2024 - August 2024"
-          link="https://www.sap.com/index.html"
+          link="https://www.caci.com/"
         />
         <Experience
           direction={1}
@@ -80,7 +80,7 @@ const Experience = ({
     <div className="experience-vertical-line"></div>
     <div className="hover-zoom experience-logo">
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={process.env.PUBLIC_URL + logo} alt="company logo" className="h-[60px] w-[60px]" />
+        <img src={process.env.PUBLIC_URL + logo} alt="company logo" className="h-auto w-[60px]" />
       </a>
     </div>
     <div className="w-full">
