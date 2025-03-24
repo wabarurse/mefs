@@ -17,6 +17,44 @@ function Projects() {
       </div>
       <div className="max-w-4xl mx-auto px-4 py-32">
         <div className="grid grid-cols-2 gap-10 justify-items-center">
+        <div onClick={() => setIsOpen(true)}>
+          <ProjectCard
+              
+              logo="/images/projects/replate.png"
+              name="Replate"
+              description="Replate is an AI-powered food sustainability app that connects users to surplus food from local restaurants, curated to match preferences and dietary restrictions."
+              skills={[
+                { name: "node", image: "/images/skills/node.png" },
+                { name: "express", image: "/images/skills/express.png" },
+                { name: "next", image: "/images/skills/next.png" },
+                { name: "react", image: "/images/skills/react.png" },
+                { name: "python", image: "/images/skills/python.png" },
+                { name: "flask", image: "/images/skills/flask.png" },
+                { name: "git", image: "/images/skills/git.png" },
+                { name: "github", image: "/images/skills/github.png" },
+              ]}
+              link="https://github.com/andrewchu16/replate"
+            />    
+        </div>
+
+        <div onClick={() => setIsOpen(true)}>
+            <ProjectCard
+              
+              logo="/images/projects/tourni.png"
+              name="Tourni" 
+              description="Tourni is a tournament portal for community and intramural activities, seamlessly connecting participants and organizers."
+              skills={[
+                { name: "next", image: "/images/skills/next.png" },
+                { name: "react", image: "/images/skills/react.png" },
+                { name: "tailwind", image: "/images/skills/tailwind.png" },
+                { name: "postgres", image: "/images/skills/postgres.png" },
+                { name: "git", image: "/images/skills/git.png" },
+                { name: "github", image: "/images/skills/github.png" },
+              ]}
+              link="https://github.com/allenlian1/tourni"
+            />
+          </div>
+
 
           <div onClick={() => setIsOpen(true)}>
             <ProjectCard
@@ -33,23 +71,7 @@ function Projects() {
             />
           </div>
           
-          <div onClick={() => setIsOpen(true)}>
-            <ProjectCard
-              
-              logo="/images/projects/tourni.png"
-              name="Tourni" 
-              description="Tourni is a tournament portal for community and intramural activities, seamlessly connecting participants and organizers."
-              skills={[
-                { name: "typescript", image: "/images/skills/ts.png" },
-                { name: "react", image: "/images/skills/react.png" },
-                { name: "tailwind", image: "/images/skills/tailwind.png" },
-                { name: "postgres", image: "/images/skills/postgres.png" },
-                { name: "git", image: "/images/skills/git.png" },
-                { name: "github", image: "/images/skills/github.png" },
-              ]}
-              link="https://github.com/allenlian1/tourni"
-            />
-          </div>
+          
 
           <div onClick={() => setIsOpen(true)}>
             <ProjectCard
@@ -65,7 +87,10 @@ function Projects() {
               ]}
               link="https://github.com/Jam-Cai/Swype"
             />
+
           </div>
+
+          
         </div>
 
 

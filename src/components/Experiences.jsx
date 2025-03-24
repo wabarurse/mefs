@@ -15,18 +15,6 @@ function Experiences() {
       <div className="max-w-5xl mx-auto px-4 py-48">
       <Experience
           direction={0}
-          logo="/images/experiences/caci.png"
-          title="Automation Testing Analyst Assistant"
-          company="@ CACI"
-          description={[
-            "Assisted senior analysts in developing future testing strategies and practices in Micro Focus ALM.",
-            "Executed UFT automation and manual test scripts alongside SMEs to assess program quality, performance, capacity, and release readiness."
-          ].join('\n')}
-          date="July 2024 - August 2024"
-          link="https://www.caci.com/"
-        />
-        <Experience
-          direction={1}
           logo="/images/experiences/orbital.png"
           title="Software Developer"
           company="@ UW Orbital"
@@ -37,6 +25,19 @@ function Experiences() {
           date="October 2024 - Present"
           link="https://www.uworbital.com/"
         />
+      <Experience
+          direction={1}
+          logo="/images/experiences/caci.png"
+          title="Automation Testing Analyst Assistant"
+          company="@ CACI"
+          description={[
+            "Assisted senior analysts in developing future testing strategies and practices in Micro Focus ALM.",
+            "Executed UFT automation and manual test scripts alongside SMEs to assess program quality, performance, capacity, and release readiness."
+          ].join('\n')}
+          date="July 2024 - August 2024"
+          link="https://www.caci.com/"
+        />
+        
         <Experience
           direction={0}
           logo="/images/experiences/checkmate.png"

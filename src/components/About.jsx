@@ -82,6 +82,8 @@ function About() {
             <Skill name="express" image="/images/skills/express.png" />
             <Skill name="mongoDB" image="/images/skills/mongo.png" />
             <Skill name="postgreSQL" image="/images/skills/postgres.png" />
+            <Skill name="flask" image="/images/skills/flask.png" />
+            <Skill name="next" image="/images/skills/next.png" />
             <Skill name="swift" image="/images/skills/swift.png" />
             <Skill name="swiftUI" image="/images/skills/swiftui.png" />
             <Skill name="git" image="/images/skills/git.png" />
